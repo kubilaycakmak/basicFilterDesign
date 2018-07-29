@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/pageDown.js"></script>
+    <script src="assets/js/mouseDown.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+</head>
+<body scroll="no">
+    <div class="first">
+        <div class="cellDiv">
+            <ul class="topNav">
+                <li><a class="cells" href="#" onclick="smoothScroll(document.getElementById('second'))"><span>Evaporatör</span></a></li>
+            </ul>
+        </div>
+        <div class="cellDiv">
+            <ul class="topNav">
+                <li><a class="cells" href="#" onclick="smoothScroll(document.getElementById('second'))"><span>Kondenser</span></a></li>
+            </ul>
+        </div>
+        <div class="cellDiv">
+            <ul class="topNav">
+                <li><a class="cells" href="#" onclick="smoothScroll(document.getElementById('second'))"><span>Kompresörlü Seçim</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="second" id="second">
+        <div class="cellDiv">
+            <ul class="topNav">
+                <li><a class="backtoTop" href="#" onclick="scrollTo:0">Seçimlere geri dön</a></li>
+            </ul>   
+        </div>
+        <div id="c1">
+                <div class="input-wrapper">
+                  <p class="container-name">
+                    Veri Girişi
+                  </p>
+                  <div class="input-container">
+                    <table>
+                      <tr>
+                        <td>
+                          Kapasite:
+                        </td>
+                        <td>
+                          <input id="kapasite" class="data-input" type="number"
+                          name="kapasite" value="10000" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Alt / Üst Aralık (± %):
+                        </td>
+                        <td>
+                          <input class="data-input" name="alt-aralik" type=
+                          "number" id="txtGapBot" value="5" max="100" min="0"
+                          step="5" /> <input class="data-input" name="ust-aralik"
+                          type="number" id="txtGapUP" value="10" max="100" min=
+                          "0" step="5" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Akışkan:
+                        </td>
+                        <td>
+                          <select>
+                            <option class="data-input" name="R404A" value="r3">
+                              R404A
+                            </option>
+                            <option class="data-input" name="R22" value="r1">
+                              R22
+                            </option>
+                            <option class="data-input" name="R134A" value="r2">
+                              R134A
+                            </option>
+                            <option class="data-input" name="R507A" value="r4">
+                              R507A
+                            </option>
+                            <option class="data-input" name="R407C" value="r5">
+                              R407C
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Oda Sıcaklığı (℃):
+                        </td>
+                        <td>
+                          <input class="data-input" type="number" name=
+                          "sicaklik" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          ΔT (K):
+                        </td>
+                        <td>
+                          <input class="data-input" type="number" name=
+                          "deltat" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Evaporasyon Sıcaklığı (℃):
+                        </td>
+                        <td>
+                          <input class="data-input" type="number" name=
+                          "evaporasyon" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>
+                          <button class="button data-input" value="SC1" type=
+                          "button" id="SC1">SC1</button> <button class=
+                          "button data-input" value="SC2" type="button" id=
+                          "SC2">SC2</button> <button class="button data-input"
+                          value="SC3" type="button" id="SC3">SC3</button>
+                          <button class="button data-input" value="SC4" type=
+                          "button" id="SC4">SC4</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Lamel Malzemesi:
+                        </td>
+                        <td>
+                          <select>
+                            <option value="r1">
+                              Alüminyüm
+                            </option>
+                            <option value="r2">
+                              Kaplı Alüminyüm
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Rakım (m):
+                        </td>
+                        <td>
+                          <input type="number" id="txtGapBot" value="50" max=
+                          "10000" min="0" step="50" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Ses Seviyesi(m/max dBA):
+                        </td>
+                        <td>
+                          <input type="number" id="txtGapBot" value="0" max="999"
+                          min="0" step="1" /> <input type="number" id="txtGapUP"
+                          value="0" max="999" min="0" step="1" />
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="input-wrapper">
+                  <p class="container-name">
+                    Lamel Aralığı
+                  </p>
+                  <div class="input-container">
+                    <table>
+                      <tr>
+                        <td>
+                          <input id="lmHepsi" name="cb6" type="checkbox" class=
+                          "regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>Hepsi</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="lm4mm" name="lm4mm" type="checkbox" value=
+                          "4mm" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>4 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="lm6mm" name="lm6mm" type="checkbox" value=
+                          "6mm" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>6 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="lm8mm" name="lm8mm" type="checkbox" value=
+                          "8mm" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>8 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="lm10mm" name="lm10mm" type="checkbox" value=
+                          "10mm" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>10 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="lm12mm" name="lm12mm" type="checkbox" value=
+                          "12mm" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>12 mm</label>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="input-wrapper">
+                  <p class="container-name">
+                    Fan Çapı
+                  </p>
+                  <div class="input-container">
+                    <table>
+                      <tr>
+                        <td>
+                          <input id="fHepsi" name="cb6" type="checkbox" value=
+                          "Hepsi" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>Hepsi</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="f250mm" name="f250mm" type="checkbox" value=
+                          "250" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>250 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="f300mm" name="f300mm" type="checkbox" value=
+                          "300" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>300 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="f350mm" name="f350mm" type="checkbox" value=
+                          "350" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>350 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="f400mm" name="f400mm" type="checkbox" value=
+                          "400" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>400 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="f450mm" name="f450mm" type="checkbox" value=
+                          "450" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>450 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="f500mm" name="f500mm" type="checkbox" value=
+                          "500" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>500 mm</label>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="clear"></div><button id="submit-button">ARA</button>
+              </div>
+    </div>
+</body>
+</html>

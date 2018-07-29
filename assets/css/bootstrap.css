@@ -1,0 +1,117 @@
+body{
+    overflow: hidden;
+    height:2000px;
+    background-color: whitesmoke;
+    transition: 0.3s all;
+}
+.changeColor {
+    background: #0e5576;
+}
+.displayNone {
+    display: none;
+}
+a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;    
+    border: 1px solid black;  
+}
+.topNav{
+    list-style-type: none;
+    margin-top: 70%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2989b6;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 18px;
+}
+.topNav span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.topNav span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+}
+.topNav:hover span {
+    padding-right: 10px;
+}
+.topNav:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.topNav:hover{
+    background-color: #1f6586;
+}
+.topNav:last-child{
+    margin-top: 3%;
+    display: inline-block;
+    width: 200px;
+    overflow: auto;
+}
+.cellDiv{
+    margin-top: 200px;
+    width: 200px;
+    height: 7.2%;
+    display: inline-block;
+    border: 1px solid black;
+}
+.first {
+    border: 1px solid black;
+    width: 100%;
+    height: 50%;
+}
+.second{
+    border: 1px solid black;
+    width: 100%;
+    height: 55%;
+}
+#c1{
+    font-size: 12pt;
+    width: 700px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.container-name{
+    margin-left: 22px;
+    width: 120px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.input-container{
+    margin-left: 22px;
+    overflow: hidden;
+}
+.input-wrapper{
+    float: left;
+    overflow: hidden;
+}
+#submit-button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 100%;
+    padding: 6px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
