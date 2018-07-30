@@ -15,12 +15,47 @@
     text-shadow: 0 0 3px rgb(255, 255, 255), 0 0 5px rgb(0, 0, 0);
 }
 body{
-    width:90%;margin:auto;min-width:600px;max-width:2000px;
+    width: 100%;
     overflow: hidden;
-    height:2000px;
+    height: 2000px;
     background-color: whitesmoke;
     transition: 0.3s all;
     transition-duration: 0.99s;
+}
+/* (1366x768) WXGA Display */
+@media  screen and (max-width: 1366px) {
+    body{
+        height: 1700px;
+    }
+    .auroraDesign{
+        position: absolute;
+        left: 46%;
+        top: 60%;
+    }
+}
+/* (1280x1024) SXGA Display */
+@media  screen and (max-width: 1280px) {
+    /* insert styles here */
+}
+ 
+/* (1440x900) WXGA+ Display */
+@media  screen and (max-width: 1440px) {
+    /* insert styles here */
+}
+ 
+/* (1680x1050) WSXGA+ Display */
+@media  screen and (max-width: 1680px) {
+    /* insert styles here */
+}
+ 
+/* (1920x1080) Full HD Display */
+@media  screen and (max-width: 1920px) {
+    /* insert styles here */
+}
+ 
+/* (1600x900) HD+ Display */
+@media  screen and (max-width: 1600px) {
+    /* insert styles here */
 }
 .changeColor {
     background: #0e5576;
