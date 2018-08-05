@@ -14,7 +14,6 @@
     <script src="assets/js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
     <link rel="stylesheet" media="screen and (max-width: 1366px)" href="assets/css/1366px.css">
-    <link rel="stylesheet" media="screen and (max-width: 1366px)" href="assets/css/1920px.css">
 </head>
 <body>
     <div class="first">
@@ -48,11 +47,84 @@
         </div>
         
         <div id="c1">
-                <div class="input-wrapper">
-                  <p class="container-name">
+            <div class="input-wrapper">
+                <p class="container-name" id="SeriH">Seri Tercihi</p>
+                <div class="input-container" id="seriTercih">
+                    <table>
+                        <tr style="display: inline-block;">
+                            <td >
+                                <input id="lmHepsi2" name="cb6" type="checkbox" value="hepsi" class="regular-checkbox" onchange=" setSeriLamelFan()" checked>
+                                <label for="lmHepsi2"></label>
+                            </td>
+                            <td>
+                                <label>Hepsi</label>
+                            </td>
+                        </tr>
+                        <tr style="display: block;">    
+                            <td>
+                                <input id="lm4mm2" name="cb6" type="checkbox" value="4" class="regular-checkbox" onchange=" setSeriLamelFan()" checked>
+                                <label for="lm4mm2"></label>
+                            </td>
+                            <td>
+                                <label>TTTS</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="float: left;">
+                                <img src="http://www.karyapiklimlendirme.com.tr/wp-content/uploads/2016/03/tav.tip_.sog_-480x344.jpg" width="110" height="80">
+                            </td>
+                        </tr>
+                        <tr style="display: block;">
+                            <td>
+                                <input id="lm6mm2" name="cb6" type="checkbox" value="6" class="regular-checkbox" onchange=" setSeriLamelFan()" checked>
+                                <label for="lm6mm2"></label>
+                            </td>
+                            <td>
+                                <label>TTAOS</label>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                           <td>
+                                <img src="http://www.karyapiklimlendirme.com.tr/wp-content/uploads/2016/03/tav_tip_oda-480x344.jpg" width="110" height="80">
+                           </td>
+                        </tr>
+                        <tr style="display: block;">    
+                            <td>
+                                <input id="lm8mm2" name="cb6" type="checkbox" value="4" class="regular-checkbox" onchange=" setSeriLamelFan()" checked>
+                                <label for="lm4mm2"></label>
+                            </td>
+                            <td>
+                                <label class="pic">TTÇÜOS</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="float: left;">
+                                <img src="http://www.karyapiklimlendirme.com.tr/wp-content/uploads/2016/03/tav_tip_cift-480x344.jpg" width="110" height="80">
+                            </td>
+                        </tr>
+                        <tr style="display: block;">    
+                            <td>
+                                <input id="lm10mm2" name="cb6" type="checkbox" value="4" class="regular-checkbox" onchange=" setSeriLamelFan()" checked>
+                                <label for="lm4mm2"></label>
+                            </td>
+                            <td>
+                                <label>SOD</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="float: left;">
+                                <img src="http://www.karyapiklimlendirme.com.tr/wp-content/uploads/2016/03/stand_oda-480x344.jpg" width="110" height="80">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+                <div class="input-wrapper" >
+                  <p class="container-name" id="VeriH">
                     Veri Girişi
                   </p>
-                  <div class="input-container">
+                  <div class="input-container" id="verigiris">
                     <table>
                       <tr>
                         <td>
@@ -61,6 +133,12 @@
                         <td>
                           <input id="kapasite" class="data-input" type="number"
                           name="kapasite" value="10000" />
+                          <select id="kapasiteTip">
+                              <option class="data-input" name="watt" value="watt">Watt</option>
+                              <option class="data-input" name="kwatt" value="kwatt">kWatt</option>
+                              <option class="data-input" name="kcalh" value="kcalh">kcal/h</option>
+                              <option class="data-input" name="btuh" value="btuh">btu/h</option>
+                          </select>
                         </td>
                       </tr>
                       <tr>
@@ -84,17 +162,20 @@
                             <option class="data-input" name="R404A" value="r3">
                               R404A
                             </option>
-                            <option class="data-input" name="R22" value="r1">
-                              R22
-                            </option>
                             <option class="data-input" name="R134A" value="r2">
                               R134A
                             </option>
-                            <option class="data-input" name="R507A" value="r4">
-                              R507A
+                            <option class="data-input" name="R22" value="r1">
+                              R22
+                            </option>
+                            <option class="data-input" name="R407C" value="r5">
+                              R407
                             </option>
                             <option class="data-input" name="R407C" value="r5">
                               R407C
+                            </option>
+                            <option class="data-input" name="R507A" value="r4">
+                              R405
                             </option>
                           </select>
                         </td>
@@ -123,7 +204,7 @@
                         </td>
                         <td>
                           <input class="data-input" type="number" name=
-                          "evaporasyon" />
+                          "evaporasyon" disabled/>
                         </td>
                       </tr>
                       <tr>
@@ -150,6 +231,9 @@
                             <option value="r2">
                               Kaplı Alüminyüm
                             </option>
+                            <option value="r3">
+                                Bakır
+                              </option>
                           </select>
                         </td>
                       </tr>
@@ -162,24 +246,14 @@
                           "10000" min="0" step="50" />
                         </td>
                       </tr>
-                      <tr>
-                        <td>
-                          Ses Seviyesi(m/max dBA):
-                        </td>
-                        <td>
-                          <input type="number" id="txtGapBot" value="0" max="999"
-                          min="0" step="1" /> <input type="number" id="txtGapUP"
-                          value="0" max="999" min="0" step="1" />
-                        </td>
-                      </tr>
                     </table>
                   </div>
                 </div>
                 <div class="input-wrapper">
-                  <p class="container-name">
+                  <p class="container-name" id="LamelH">
                     Lamel Aralığı
                   </p>
-                  <div class="input-container">
+                  <div class="input-container" id="lamelAralıgıUzunluk">
                     <table>
                       <tr>
                         <td>
@@ -197,6 +271,15 @@
                         </td>
                         <td>
                           <label>4 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="lm4-8mm" name="lm4mm" type="checkbox" value=
+                          "4-8mm" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>4.8 mm</label>
                         </td>
                       </tr>
                       <tr>
@@ -239,10 +322,10 @@
                   </div>
                 </div>
                 <div class="input-wrapper">
-                  <p class="container-name">
+                  <p class="container-name" id="FanH">
                     Fan Çapı
                   </p>
-                  <div class="input-container">
+                  <div class="input-container" id="FanCapıUzunluk">
                     <table>
                       <tr>
                         <td>
@@ -251,6 +334,33 @@
                         </td>
                         <td>
                           <label>Hepsi</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="f120mm" name="f120mm" type="checkbox" value=
+                          "120" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>120 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="f180mm" name="f180mm" type="checkbox" value=
+                          "180" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>180 mm</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="f200mm" name="f200mm" type="checkbox" value=
+                          "200" class="regular-checkbox" checked="checked" />
+                        </td>
+                        <td>
+                          <label>200 mm</label>
                         </td>
                       </tr>
                       <tr>

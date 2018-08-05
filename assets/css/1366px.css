@@ -40,7 +40,6 @@ a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;    
-    border: 1px solid black;  
 }
 .topNav{
     -webkit-touch-callout: none;
@@ -103,59 +102,183 @@ a{
     width: 200px;
     height: 7.2%;
     display: inline-block;
-    border: 1px solid black;
 }
 .first {
-    border: 1px solid black;
     width: 100%;
     height: 50%;
 }
 .second{
-    border: 1px solid black;
     width: 100%;
     height: 55%;
 }
 #c1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: white;
+    color: rgba(56, 56, 56, 0.836);
     font-size: 11pt;
-    width: 700px;
+    width: 835px;
+    height: 540px;
     text-align: center;
     overflow: hidden;
     margin: 0 auto;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-box-shadow: 0px 0px 76px 3px rgba(0,0,0,0.83);
+    -moz-box-shadow: 0px 0px 76px 3px rgba(0,0,0,0.83);
+    box-shadow: 0px 0px 76px 3px rgba(0,0,0,0.83);
+    display: block;
+    border-style: outset;
+    background: rgba(226,226,226,1);
+    background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+    background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
 }
 .container-name{
-    margin-left: 22px;
+    margin-bottom: 8px;
+    padding: 3px;
+    color: rgba(56, 56, 56, 0.836);
+    border-style: outset;
+    margin-top: 5px;
+    margin-left: 5px;
     width: 120px;
-    overflow: hidden;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background: rgba(242,246,248,1);
+    background: -moz-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(255,255,255,1) 15%, rgba(181,198,208,1) 77%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242,246,248,1)), color-stop(15%, rgba(255,255,255,1)), color-stop(77%, rgba(181,198,208,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(255,255,255,1) 15%, rgba(181,198,208,1) 77%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(255,255,255,1) 15%, rgba(181,198,208,1) 77%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(top, rgba(242,246,248,1) 0%, rgba(255,255,255,1) 15%, rgba(181,198,208,1) 77%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(242,246,248,1) 0%, rgba(255,255,255,1) 15%, rgba(181,198,208,1) 77%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#ededed', GradientType=0 );
 }
 .input-container{
-    margin-left: 22px;
-    overflow: hidden;
+    text-align: left;
+    border-style: double;
+    margin-left: 5px;
+    display: inline-block;
+    display: block;
+    background-color: whitesmoke;
 }
 .input-wrapper{
     float: left;
-    overflow: hidden;
+    display: block;
 }
 #submit-button{
-    
     background-color: rgb(255, 255, 255);
+    color: #000;
+    width: 32%;
+    height: 35%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: outset;
+    transition: 0.6s;
+}
+#submit-button:hover{
+    border-style: inset;
+    color: white;
+    background-color: #1f6586;
+}
+.button {
+    background-color: #0e5576; 
     border: none;
-    width: 100%;
-    padding: 6px 0px;
+    color: white;
+    padding: 6px 3px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    margin-top: 30px;
     cursor: pointer;
     border-radius: 5px;
-}
+  }
+  #table-body {
+    margin: auto;
+    margin-top: 10px;
+    display: none;
+  }
+  #table-div  {
+    border-top: 25px solid #0e5576;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px 2px #a2a2a2;
+    overflow: scroll;
+  }
+  
+  #search-table > tbody > tr > td {
+    border: 1px solid#0e5576;
+  }
+  #search-table > tr > td {
+    border: 1px solid #0e5576;
+  }
+  
+  #units {
+    background:#0e5576;
+    color: white;
+  }
+  
+  #units > td {
+    text-align: center;
+  }
+  
+  /*#region scrollbar*/
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 55px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0074b9; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0e5576; 
+  }
+  /*#endregion*/
+  #verigiris{
+    line-height: 3.4;
+  }
+  #lamelAralıgıUzunluk{
+    height: 280px;
+  }
+  #FanCapıUzunluk{
+    height: 280px;
+  }
+  #seriTercih{
+    line-height: 0px;
+      font-size: 9pt;
+  }
+  #VeriH{
+      width: 400px;
+  }
+  .regular-checkbox{
+    width: 15px;
+    height: 15px;
+    background: #ddd;
+    position: relative;
+    
+  }
+  .regular-checkbox:hover{
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  }

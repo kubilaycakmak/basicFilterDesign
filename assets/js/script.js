@@ -56,7 +56,8 @@ $(function() {
   
     //#region buttonClick
     $("#SC1").click(function() {
-        $("#lm4mm").prop("checked", true);  
+        $("#lm4mm").prop("checked", true);
+        $("#lm4-8mm").prop("checked", true);  
         $("#lm6mm").prop("checked", true);
         $("#lm8mm").prop("checked", false);
         $("#lm10mm").prop("checked", false);
@@ -77,6 +78,7 @@ $(function() {
     $("#SC2").click(function() {
         $("#lm6mm").prop("checked", true);
         $("#lm8mm").prop("checked", true);
+        $("#lm4-8mm").prop("checked", false); 
         $("#lm4mm").prop("checked", false);
         $("#lm10mm").prop("checked", false);
         $("#lm12mm").prop("checked", false); 
@@ -94,6 +96,7 @@ $(function() {
         $("#SC4").css("background-color","#0e5576");
     });
     $("#SC3").click(function() {
+        $("#lm4-8mm").prop("checked", false); 
         $("#lm8mm").prop("checked", true);
         $("#lm10mm").prop("checked", true);
         $("#lm4mm").prop("checked", false);
@@ -105,7 +108,7 @@ $(function() {
         $("#SC1").removeClass( "sc-active" );
         $("#SC4").removeClass( "sc-active" );
         $('input[name=evaporasyon]').val('-25');
-        $('input[name=deltat]').val('-6');
+        $('input[name=deltat]').val('7');
         $('input[name=sicaklik]').val('-18');
         $(this).css("background-color","green");
         $("#SC2").css("background-color","#0e5576");
@@ -113,6 +116,7 @@ $(function() {
         $("#SC4").css("background-color","#0e5576");
     });
     $("#SC4").click(function() {
+        $("#lm4-8mm").prop("checked", false); 
         $("#lm10mm").prop("checked", true);
         $("#lm12mm").prop("checked", true);
         $("#lm8mm").prop("checked", false);
@@ -123,9 +127,9 @@ $(function() {
         $("#SC2").removeClass( "sc-active" );
         $("#SC3").removeClass( "sc-active" );
         $("#SC1").removeClass( "sc-active" );
-        $('input[name=evaporasyon]').val('-31');
-        $('input[name=deltat]').val('-6');
-        $('input[name=sicaklik]').val('-25');
+        $('input[name=evaporasyon]').val('25');
+        $('input[name=deltat]').val('6');
+        $('input[name=sicaklik]').val('31');
         $(this).css("background-color","green");
         $("#SC2").css("background-color","#0e5576");
         $("#SC3").css("background-color","#0e5576");
@@ -134,12 +138,14 @@ $(function() {
     $("#lmHepsi").click(function(){
         if(this.checked) {
             $("#lm4mm").prop("checked", true);  
+            $("#lm4-8mm").prop("checked", true);  
             $("#lm6mm").prop("checked", true);
             $("#lm8mm").prop("checked", true);
             $("#lm10mm").prop("checked", true);
             $("#lm12mm").prop("checked", true);
         } else {
-            $("#lm4mm").prop("checked", false);  
+            $("#lm4mm").prop("checked", false); 
+            $("#lm4-8mm").prop("checked", false); 
             $("#lm6mm").prop("checked", false);
             $("#lm8mm").prop("checked", false);
             $("#lm10mm").prop("checked", false);
@@ -148,7 +154,9 @@ $(function() {
     });
     $("#fHepsi").click(function(){
         if(this.checked) {
-            $("#f200mm").prop("checked", true);  
+            $("#f120mm").prop("checked", true);
+            $("#f180mm").prop("checked", true);
+            $("#f200mm").prop("checked", true);
             $("#f250mm").prop("checked", true);
             $("#f300mm").prop("checked", true);
             $("#f350mm").prop("checked", true);
@@ -158,6 +166,8 @@ $(function() {
             $("#f630mm").prop("checked", true);
             $("#f800mm").prop("checked", true);
         } else {
+            $("#f120mm").prop("checked", false);
+            $("#f180mm").prop("checked", false);
             $("#f200mm").prop("checked", false);  
             $("#f250mm").prop("checked", false);
             $("#f300mm").prop("checked", false);
