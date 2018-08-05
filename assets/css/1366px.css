@@ -183,13 +183,14 @@ a{
     margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
-    border-style: outset;
+    border-style: groove;
     transition: 0.6s;
 }
 #submit-button:hover{
-    border-style: inset;
+    border-style: ridge;
     color: white;
     background-color: #1f6586;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .button {
     background-color: #0e5576; 
