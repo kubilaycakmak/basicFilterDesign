@@ -124,8 +124,8 @@ a{
     user-select: none;
     color: rgba(56, 56, 56, 0.836);
     font-size: 11pt;
-    width: 835px;
-    height: 540px;
+    width: 43.5%;
+    height: 48.9%;
     margin: 0 auto;
     -webkit-box-shadow: 0px 0px 76px 3px rgba(0,0,0,0.83);
     -moz-box-shadow: 0px 0px 76px 3px rgba(0,0,0,0.83);
@@ -270,7 +270,8 @@ a{
   }
   #verigiris{
     line-height: 3.4;
-  }
+    height: 47.9%;
+}
   #lamelAralıgıUzunluk{
     height: 280px;
   }
@@ -279,8 +280,9 @@ a{
   }
   #seriTercih{
     line-height: 0px;
-      font-size: 9pt;
+    font-size: 9pt;
+    height: 47.9%;
   }
   #VeriH{
-      width: 400px;
+    width: 96%
   }
